@@ -33,3 +33,6 @@ def solve_system(coefficients, constants):
     """
     solution = solve(coefficients, constants)
     return {"X": solution[0], "Y": solution[1]}
+
+def generate_normal_samples(mean, stddev, size):
+    return np.random.normal(loc=mean, scale=stddev, size=size)
