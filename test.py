@@ -1,4 +1,4 @@
-from main import integrate_linear_function
+from main import integrate_linear_function, solve_system
 
 def test_integrate_linear_function():
     # Test: f(x) = 2x + 1, range [0, 2]
