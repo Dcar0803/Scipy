@@ -1,4 +1,5 @@
 from scipy.integrate import quad
+from scipy.linalg import solve
 
 def integrate_linear_function(a, b, start, end):
 
