@@ -35,4 +35,15 @@ def solve_system(coefficients, constants):
     return {"X": solution[0], "Y": solution[1]}
 
 def generate_normal_samples(mean, stddev, size):
+
+    """Generates samples from a normal distribution.
+
+    Parameters:
+        mean (float): Mean of the normal distribution.
+        stddev (float): Standard deviation of the normal distribution.
+        size (int): Number of samples to generate.
+
+    Returns:
+        numpy.ndarray: Array of generated samples.
+    """
     return np.random.normal(loc=mean, scale=stddev, size=size)
