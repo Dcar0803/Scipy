@@ -20,5 +20,15 @@ def integrate_linear_function(a, b, start, end):
 
 
 def solve_system(coefficients, constants):
-     solution = solve(coefficients, constants)
-     return {"X": solution[0], "Y": solution[1]}
+     
+    """Solves a system of two linear equations.
+
+    Parameters:
+        coefficients (list[list[float]]): Coefficient matrix of the equations.
+        constants (list[float]): Constant values of the equations.
+
+    Returns:
+        dict: Dictionary containing the solution {'X': x_value, 'Y': y_value}.
+    """
+    solution = solve(coefficients, constants)
+    return {"X": solution[0], "Y": solution[1]}
