@@ -17,3 +17,8 @@ def integrate_linear_function(a, b, start, end):
     f = lambda x: a * x + b
     result, _ = quad(f, start, end)
     return result
+
+
+def solve_system(coefficients, constants):
+     solution = solve(coefficients, constants)
+     return {"X": solution[0], "Y": solution[1]}
