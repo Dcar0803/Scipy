@@ -14,3 +14,11 @@ def test_solve_system():
     assert round(result["X"], 2) == 1.0
     assert round(result["Y"], 2) == 2.0
     print("test_solve_system passed.")
+
+
+def test_generate_normal_samples():
+
+    samples = generate_normal_samples(mean=0, stddev=1, size=1000)
+    assert len(samples) == 1000
+    assert abs(sum(samples) / 1000) < 0.1  # Mean close to 0
+    print("test_generate_normal_samples passed.")
